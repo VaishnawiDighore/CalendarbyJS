@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+    <div class="container">
+        <select id="month" onchange="jumpToTheDate()">
+         <!-- <option value="" selected>Select Month</option>   -->
+          <option value="0">JAN</option>
+          <option value="1">FEB</option>
+          <option value="2">MAR</option>
+          <option value="3">APR</option>
+          <option value="4">MAY</option>
+          <option value="5">JUN</option>
+          <option value="6">JUL</option>
+          <option value="7">AUG</option>
+          <option value="8">SEP</option>
+          <option value="9">OCT</option>
+          <option value="10">NOV</option>
+          <option value="11">DEC</option>
+        </select>
+        <select id="year" onchange="jumpToTheDate()">
+            <!-- <option selected>Select Year</option> -->
+        </select>
+      </div>
+  
+      <div class="Main-container">
+        <div class="container-calendar">
+          <h3 id="monthYear"></h3>
+          
+          <table class="table-calendar" id="calendar" data-lang="en">
+            <thead id="header-month"></thead>
+            <tbody id="calendar-body"></tbody>
+          </table>
+        </div>
+        <div class="enterDate">
+          <input id="value" placeholder=" Enter Any Date" />
+          <button class="enter">Enter</button>
+        </div>
+    </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
